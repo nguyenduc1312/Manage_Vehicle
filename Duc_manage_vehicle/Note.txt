@@ -1,0 +1,4 @@
+kích cỡ textbox: 150,25
+khoảng cách: 30
+cỡ chữ: - label: 11
+	- textbox: 10
