@@ -15,6 +15,8 @@ namespace Duc_manage_vehicle.Forms
     public partial class UserForm : Form
     {
         UserDAO userDAO = new UserDAO();
+        string globalUserId = null;
+
         public UserForm()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace Duc_manage_vehicle.Forms
             account.fullname = txtFullName.Text + "";
             account.user_phone = txtPhone.Text + "";
 
-            da = userDAO.queryUser(account);
+            da = userDAO.queryUsers(account);
             grdvUser.DataSource = da;
         }
 
@@ -37,6 +39,60 @@ namespace Duc_manage_vehicle.Forms
         {
             AddUser addUser = new AddUser();
             addUser.Show();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            List<string> listId = new List<string>();
+            foreach(DataGridViewRow row in grdvUser.Rows)
+            {
+                DataGridViewCheckBoxCell checking = row.Cells[0] as DataGridViewCheckBoxCell;
+                if (Convert.ToBoolean(checking.Value) == true)
+                {
+                    listId.Add(row.Cells["user_id"].Value + "");
+                }
+            }
+            if(listId.Count > 0)
+            {
+                foreach(string id in listId)
+                {
+                    userDAO.deleteUser(id);
+                }
+                MessageBox.Show("Delete Successed!");
+                btnSearch.PerformClick();
+            }
+            else
+            {
+                MessageBox.Show("You didn't choose any row!");
+            }
+        }
+
+        private void grdvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex > 0)
+            {
+                DataGridViewRow row = this.grdvUser.Rows[e.RowIndex];
+                if (row != null)
+                    globalUserId = row.Cells["user_id"].Value + "";
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if(globalUserId != null)
+            {
+                Account account = new Account();
+                DataTable da = userDAO.queryUser(globalUserId);
+                if(da != null)
+                {
+                    account.user_id = da.Rows[0].Field<string>(0);
+                    account.password = da.Rows[0].Field<string>(1);
+                    account.fullname = da.Rows[0].Field<string>(2);
+                    account.user_identity_card_num = da.Rows[0].Field<string>(3);
+                    account.user_phone = da.Rows[0].Field<string>(4);
+                }
+
+            }
         }
     }
 }

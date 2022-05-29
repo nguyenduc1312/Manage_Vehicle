@@ -22,3 +22,27 @@ F:\C# Projects\Duc_manage_vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\re
 F:\C# Projects\Duc_Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Properties.Resources.resources
 F:\C# Projects\Duc_Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Forms.UserForm.resources
 F:\C# Projects\Duc_Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Forms.AddUser.resources
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\Duc_manage_vehicle.exe
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\Duc_manage_vehicle.deps.json
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\Duc_manage_vehicle.runtimeconfig.json
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\Duc_manage_vehicle.dll
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\Duc_manage_vehicle.pdb
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\System.Data.OleDb.dll
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.OleDb.dll
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.csproj.AssemblyReference.cache
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Forms.AddUser.resources
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Forms.HomePage.resources
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Forms.Login.resources
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Forms.UserForm.resources
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.Properties.Resources.resources
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.csproj.GenerateResource.cache
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.GeneratedMSBuildEditorConfig.editorconfig
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.AssemblyInfoInputs.cache
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.AssemblyInfo.cs
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.csproj.CoreCompileInputs.cache
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.csproj.CopyComplete
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.dll
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\refint\Duc_manage_vehicle.dll
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.pdb
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\Duc_manage_vehicle.genruntimeconfig.cache
+F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\obj\Debug\net6.0-windows\ref\Duc_manage_vehicle.dll

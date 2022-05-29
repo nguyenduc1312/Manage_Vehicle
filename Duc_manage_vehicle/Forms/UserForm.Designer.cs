@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -40,11 +41,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.grdvUser = new System.Windows.Forms.DataGridView();
             this.check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.user_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserIdCardNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdvUser)).BeginInit();
@@ -52,6 +54,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.txtPhone);
@@ -65,6 +69,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(832, 90);
             this.panel1.TabIndex = 0;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnDelete.Image = global::Duc_manage_vehicle.Properties.Resources.icons8_trash_161;
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(255, 0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 30);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -160,7 +177,7 @@
             this.grdvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.check,
-            this.Username,
+            this.user_id,
             this.Password,
             this.FullName,
             this.Phone,
@@ -171,6 +188,7 @@
             this.grdvUser.RowTemplate.Height = 25;
             this.grdvUser.Size = new System.Drawing.Size(832, 380);
             this.grdvUser.TabIndex = 0;
+            this.grdvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdvUser_CellContentClick);
             // 
             // check
             // 
@@ -178,12 +196,12 @@
             this.check.Name = "check";
             this.check.Width = 50;
             // 
-            // Username
+            // user_id
             // 
-            this.Username.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Username.DataPropertyName = "user_id";
-            this.Username.HeaderText = "Username";
-            this.Username.Name = "Username";
+            this.user_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.user_id.DataPropertyName = "user_id";
+            this.user_id.HeaderText = "Username";
+            this.user_id.Name = "user_id";
             // 
             // Password
             // 
@@ -214,6 +232,19 @@
             this.UserIdCardNum.Name = "UserIdCardNum";
             this.UserIdCardNum.Width = 200;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnUpdate.Image = global::Duc_manage_vehicle.Properties.Resources.icons8_edit_16;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(170, 0);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(85, 30);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -243,12 +274,14 @@
         private Panel panel2;
         private DataGridView grdvUser;
         private Button btnSearch;
+        private Button btnAdd;
+        private Button btnDelete;
         private DataGridViewCheckBoxColumn check;
-        private DataGridViewTextBoxColumn Username;
+        private DataGridViewTextBoxColumn user_id;
         private DataGridViewTextBoxColumn Password;
         private DataGridViewTextBoxColumn FullName;
         private DataGridViewTextBoxColumn Phone;
         private DataGridViewTextBoxColumn UserIdCardNum;
-        private Button btnAdd;
+        private Button btnUpdate;
     }
 }

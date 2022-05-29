@@ -12,8 +12,8 @@ namespace Duc_manage_vehicle.Common
     { 
         public OleDbConnection GetConnection()
         {
-            string strCon = @"Provider = Microsoft.ACE.OLEDB.12.0;Data Source=F:\C# Projects\Duc_manage_vehicle\Duc_manage_vehicle\db\Manage_Vehicle.accdb; Jet OLEDB:Database Password=ksyserp;";
-            //string strCon = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source= F:\C# Projects\Duc_manage_vehicle\Duc_manage_vehicle\db\Manage_Vehicle.accdb; Persist Security Info=True; Jet OLEDB:Database Password=ksyserp;";
+            //string strCon = @"Provider = Microsoft.ACE.OLEDB.12.0;Data Source=F:\C# Projects\Duc_manage_vehicle\Duc_manage_vehicle\db\Manage_Vehicle.accdb; Jet OLEDB:Database Password=ksyserp;";
+            string strCon = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=F:\vs_code\Manage_Vehicle\Duc_manage_vehicle\db\Manage_Vehicle.accdb; Jet OLEDB:Database Password=ksyserp;";
             return new OleDbConnection(strCon);
         }
         public DataTable getTable(string sql)

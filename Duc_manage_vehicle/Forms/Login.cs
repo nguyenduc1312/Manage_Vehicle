@@ -49,5 +49,10 @@ namespace Duc_manage_vehicle.Forms
                 Console.WriteLine(ex.StackTrace);
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -76,5 +76,10 @@ namespace Duc_manage_vehicle.Forms
                 txtPhone.Text = txtPhone.Text.Remove(txtPhone.Text.Length - 1);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
