@@ -35,7 +35,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVehicle = new System.Windows.Forms.Button();
             this.btnUserPage = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.panelMenu.Controls.Add(this.button4);
             this.panelMenu.Controls.Add(this.button3);
             this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnVehicle);
             this.panelMenu.Controls.Add(this.btnUserPage);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -167,22 +167,23 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnVehicle
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = global::Duc_manage_vehicle.Properties.Resources.icon_user2;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "User ";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVehicle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVehicle.FlatAppearance.BorderSize = 0;
+            this.btnVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVehicle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnVehicle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVehicle.Image = global::Duc_manage_vehicle.Properties.Resources.icons8_vehicle_insurance_321;
+            this.btnVehicle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVehicle.Location = new System.Drawing.Point(0, 140);
+            this.btnVehicle.Name = "btnVehicle";
+            this.btnVehicle.Size = new System.Drawing.Size(220, 60);
+            this.btnVehicle.TabIndex = 2;
+            this.btnVehicle.Text = "Vehicle";
+            this.btnVehicle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVehicle.UseVisualStyleBackColor = true;
+            this.btnVehicle.Click += new System.EventHandler(this.btnVehicle_Click);
             // 
             // btnUserPage
             // 
@@ -262,7 +263,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
             this.Name = "HomePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePahe";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
@@ -281,7 +284,7 @@
         private Button button4;
         private Button button3;
         private Button button2;
-        private Button button1;
+        private Button btnVehicle;
         private Button btnUserPage;
         private Panel panelLogo;
         private Panel panel1;

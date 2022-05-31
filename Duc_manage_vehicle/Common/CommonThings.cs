@@ -23,5 +23,21 @@ namespace Duc_manage_vehicle.Common
             return sb.ToString();
         }
 
+        public void charIsDigit(string text, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            // 48 = 0
+            // 44 = ,
+            if (ch == 46 && text.IndexOf('.') != -1)
+            {
+                e.Handled = true;
+                return;
+            }
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46 && ch != 44)
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }

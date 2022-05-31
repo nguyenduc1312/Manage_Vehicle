@@ -3,4 +3,4 @@ khoảng cách: 30
 cỡ chữ: - label: 11
 	- textbox: 10
 size iconbutton ở form: 16x16
-size icon button ở menu:
+size icon button ở menu: 32X32

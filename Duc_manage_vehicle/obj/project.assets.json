@@ -451,19 +451,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\H-Sky\\.nuget\\packages\\": {}
+    "C:\\Users\\KSYSTEM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\vs_code\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
+      "projectUniqueName": "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
       "projectName": "Duc_manage_vehicle",
-      "projectPath": "F:\\vs_code\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
-      "packagesPath": "C:\\Users\\H-Sky\\.nuget\\packages\\",
-      "outputPath": "F:\\vs_code\\Manage_Vehicle\\Duc_manage_vehicle\\obj\\",
+      "projectPath": "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
+      "packagesPath": "C:\\Users\\KSYSTEM\\.nuget\\packages\\",
+      "outputPath": "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\H-Sky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KSYSTEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -512,7 +512,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

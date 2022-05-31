@@ -226,6 +226,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.panel1);
             this.Name = "AddUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddUser";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

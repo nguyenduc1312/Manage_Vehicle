@@ -223,6 +223,7 @@
             this.Controls.Add(this.txtUserId);
             this.Controls.Add(this.lblUsername);
             this.Name = "UpdateUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateUser";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

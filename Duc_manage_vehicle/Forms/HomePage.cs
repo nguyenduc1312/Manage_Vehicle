@@ -40,5 +40,10 @@ namespace Duc_manage_vehicle.Forms
         {
             openChildForm(new Forms.UserForm(), sender);
         }
+
+        private void btnVehicle_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Forms.VehicleForm(), sender);
+        }
     }
 }
