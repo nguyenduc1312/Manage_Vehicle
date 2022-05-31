@@ -55,7 +55,16 @@ namespace Duc_manage_vehicle.Forms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            string vehicle_id = txtVehicleId.Text + "";
+            string license_plates = txtLicense.Text + "";
+            string frPrice = txtFrRent.Text + "";
+            if (frPrice == "") frPrice = "999999999";
+            string toPrice = txtToRent.Text + "";
+            if (toPrice == "") toPrice = "0";
+            string typeVehicle = cbTypeVehicle.SelectedValue + "";
+            string status_vehicle = cbStatus.SelectedValue + "";
+            DataTable da = vehicleDAO.queryVehicle(vehicle_id,license_plates,frPrice,toPrice,typeVehicle, status_vehicle);
+            grdvVehicle.DataSource = da;
         }
     }
 }

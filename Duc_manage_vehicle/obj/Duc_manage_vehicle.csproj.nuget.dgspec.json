@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj": {}
+    "F:\\C# Projects\\Duc_Manage_Vehicle\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj": {}
   },
   "projects": {
-    "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj": {
+    "F:\\C# Projects\\Duc_Manage_Vehicle\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
+        "projectUniqueName": "F:\\C# Projects\\Duc_Manage_Vehicle\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
         "projectName": "Duc_manage_vehicle",
-        "projectPath": "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
-        "packagesPath": "C:\\Users\\KSYSTEM\\.nuget\\packages\\",
-        "outputPath": "E:\\New folder\\Manage_Vehicle\\Duc_manage_vehicle\\obj\\",
+        "projectPath": "F:\\C# Projects\\Duc_Manage_Vehicle\\Manage_Vehicle\\Duc_manage_vehicle\\Duc_manage_vehicle.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\C# Projects\\Duc_Manage_Vehicle\\Manage_Vehicle\\Duc_manage_vehicle\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\KSYSTEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

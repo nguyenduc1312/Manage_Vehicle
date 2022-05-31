@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserIdCardNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdvUser)).BeginInit();
@@ -67,8 +67,21 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(832, 90);
+            this.panel1.Size = new System.Drawing.Size(1202, 90);
             this.panel1.TabIndex = 0;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnUpdate.Image = global::Duc_manage_vehicle.Properties.Resources.icons8_edit_16;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(170, 0);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(85, 30);
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -169,7 +182,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 90);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(832, 380);
+            this.panel2.Size = new System.Drawing.Size(1202, 556);
             this.panel2.TabIndex = 1;
             // 
             // grdvUser
@@ -186,7 +199,7 @@
             this.grdvUser.Location = new System.Drawing.Point(0, 0);
             this.grdvUser.Name = "grdvUser";
             this.grdvUser.RowTemplate.Height = 25;
-            this.grdvUser.Size = new System.Drawing.Size(832, 380);
+            this.grdvUser.Size = new System.Drawing.Size(1202, 556);
             this.grdvUser.TabIndex = 0;
             this.grdvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdvUser_CellContentClick);
             // 
@@ -216,40 +229,27 @@
             this.FullName.DataPropertyName = "fullname";
             this.FullName.HeaderText = "Full Name";
             this.FullName.Name = "FullName";
-            this.FullName.Width = 239;
+            this.FullName.Width = 300;
             // 
             // Phone
             // 
             this.Phone.DataPropertyName = "user_phone_number";
             this.Phone.HeaderText = "PhoneNumber";
             this.Phone.Name = "Phone";
-            this.Phone.Width = 200;
+            this.Phone.Width = 300;
             // 
             // UserIdCardNum
             // 
             this.UserIdCardNum.DataPropertyName = "user_identity_card_num";
             this.UserIdCardNum.HeaderText = "Id Card Number";
             this.UserIdCardNum.Name = "UserIdCardNum";
-            this.UserIdCardNum.Width = 200;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnUpdate.Image = global::Duc_manage_vehicle.Properties.Resources.icons8_edit_16;
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(170, 0);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(85, 30);
-            this.btnUpdate.TabIndex = 9;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.UserIdCardNum.Width = 300;
             // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 470);
+            this.ClientSize = new System.Drawing.Size(1202, 646);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UserForm";
@@ -276,12 +276,12 @@
         private Button btnSearch;
         private Button btnAdd;
         private Button btnDelete;
+        private Button btnUpdate;
         private DataGridViewCheckBoxColumn check;
         private DataGridViewTextBoxColumn user_id;
         private DataGridViewTextBoxColumn Password;
         private DataGridViewTextBoxColumn FullName;
         private DataGridViewTextBoxColumn Phone;
         private DataGridViewTextBoxColumn UserIdCardNum;
-        private Button btnUpdate;
     }
 }

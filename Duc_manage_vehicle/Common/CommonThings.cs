@@ -26,8 +26,6 @@ namespace Duc_manage_vehicle.Common
         public void charIsDigit(string text, System.Windows.Forms.KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-            // 48 = 0
-            // 44 = ,
             if (ch == 46 && text.IndexOf('.') != -1)
             {
                 e.Handled = true;

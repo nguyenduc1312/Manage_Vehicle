@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtToDate = new System.Windows.Forms.TextBox();
+            this.txtFrDate = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbTypeVehicle = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtToRent = new System.Windows.Forms.TextBox();
             this.txtLicense = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,13 +47,6 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtFrRent = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbTypeVehicle = new System.Windows.Forms.ComboBox();
-            this.cbStatus = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtToDate = new System.Windows.Forms.TextBox();
-            this.txtFrDate = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.grdvVehicle = new System.Windows.Forms.DataGridView();
             this.check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.VehicleId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,6 +86,68 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 119);
             this.panel1.TabIndex = 1;
+            // 
+            // txtToDate
+            // 
+            this.txtToDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtToDate.Location = new System.Drawing.Point(459, 80);
+            this.txtToDate.Name = "txtToDate";
+            this.txtToDate.Size = new System.Drawing.Size(90, 25);
+            this.txtToDate.TabIndex = 21;
+            // 
+            // txtFrDate
+            // 
+            this.txtFrDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtFrDate.Location = new System.Drawing.Point(364, 80);
+            this.txtFrDate.Name = "txtFrDate";
+            this.txtFrDate.Size = new System.Drawing.Size(90, 25);
+            this.txtFrDate.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(289, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 20);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Buy date";
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Location = new System.Drawing.Point(91, 80);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(150, 23);
+            this.cbStatus.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(35, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 20);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Status";
+            // 
+            // cbTypeVehicle
+            // 
+            this.cbTypeVehicle.FormattingEnabled = true;
+            this.cbTypeVehicle.Location = new System.Drawing.Point(932, 40);
+            this.cbTypeVehicle.Name = "cbTypeVehicle";
+            this.cbTypeVehicle.Size = new System.Drawing.Size(150, 23);
+            this.cbTypeVehicle.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(835, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Type Vehicle";
             // 
             // txtToRent
             // 
@@ -200,68 +262,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Rent Price";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(835, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 20);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Type Vehicle";
-            // 
-            // cbTypeVehicle
-            // 
-            this.cbTypeVehicle.FormattingEnabled = true;
-            this.cbTypeVehicle.Location = new System.Drawing.Point(932, 40);
-            this.cbTypeVehicle.Name = "cbTypeVehicle";
-            this.cbTypeVehicle.Size = new System.Drawing.Size(150, 23);
-            this.cbTypeVehicle.TabIndex = 16;
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.FormattingEnabled = true;
-            this.cbStatus.Location = new System.Drawing.Point(91, 80);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(150, 23);
-            this.cbStatus.TabIndex = 18;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(35, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 20);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Status";
-            // 
-            // txtToDate
-            // 
-            this.txtToDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtToDate.Location = new System.Drawing.Point(459, 80);
-            this.txtToDate.Name = "txtToDate";
-            this.txtToDate.Size = new System.Drawing.Size(90, 25);
-            this.txtToDate.TabIndex = 21;
-            // 
-            // txtFrDate
-            // 
-            this.txtFrDate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtFrDate.Location = new System.Drawing.Point(364, 80);
-            this.txtFrDate.Name = "txtFrDate";
-            this.txtFrDate.Size = new System.Drawing.Size(90, 25);
-            this.txtFrDate.TabIndex = 20;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(289, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 20);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Buy date";
-            // 
             // grdvVehicle
             // 
             this.grdvVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -319,14 +319,14 @@
             // 
             // Price
             // 
-            this.Price.DataPropertyName = "rent_price";
+            this.Price.DataPropertyName = "price";
             this.Price.HeaderText = "Price";
             this.Price.Name = "Price";
             this.Price.Width = 150;
             // 
             // Status
             // 
-            this.Status.DataPropertyName = "vehicle_status";
+            this.Status.DataPropertyName = "status";
             this.Status.HeaderText = "Status";
             this.Status.Name = "Status";
             this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -391,8 +391,8 @@
         private DataGridViewComboBoxColumn TypeVehicle;
         private DataGridViewTextBoxColumn VehicleName;
         private DataGridViewTextBoxColumn Price;
+        private DataGridViewComboBoxColumn Status;
         private DataGridViewTextBoxColumn PurchaseDate;
         private DataGridViewTextBoxColumn SeatNum;
-        private DataGridViewComboBoxColumn Status;
     }
 }

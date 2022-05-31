@@ -59,15 +59,45 @@ namespace Duc_manage_vehicle.DAO
             int check = 0;
             string user_id = account.user_id;
             string password = account.password;
-            string fullname  = account.fullname;
+            string fullname = account.fullname;
             string idNum = account.user_identity_card_num;
             string phoneNum = account.user_phone;
 
-            string sqlString = "UPDATE tbl_user " +
-                               "SET password = '" + password + "', fullname = '" + fullname + "', user_identity_card_num = '" + idNum + "', user_phone_number = '" + phoneNum + "' " +
-                               "WHERE user_id = '" + user_id + "'";
+            string sqlString = "UPDATE [tbl_user] " +
+                               "SET [password] = '" + password + "', [fullname] = '" + fullname + "', [user_identity_card_num] = '" + idNum + "', [user_phone_number] = '" + phoneNum + "' " +
+                               "WHERE [user_id] = '" + user_id + "'";
             check = dbCon.ExcuteNonQuery(sqlString);
             return check;
+        }
+
+        public List<Account> convertToListUser(DataTable dt)
+        {
+            var convertedList = (from rw in dt.AsEnumerable()
+                                 select new Account()
+                                 {
+                                     user_id = Convert.ToString(rw["user_id"]),
+                                     password = Convert.ToString(rw["password"]),
+                                     fullname = Convert.ToString(rw["fullname"]),
+                                     user_identity_card_num = Convert.ToString(rw["user_identity_card_num"]),
+                                     user_phone = Convert.ToString(rw["user_phone"]),
+                                 }).ToList();
+
+            return convertedList;
+        }
+
+        public Account convertToUser(DataTable dt)
+        {
+            var convertedList = (from rw in dt.AsEnumerable()
+                                 select new Account()
+                                 {
+                                     user_id = Convert.ToString(rw["user_id"]),
+                                     password = Convert.ToString(rw["password"]),
+                                     fullname = Convert.ToString(rw["fullname"]),
+                                     user_identity_card_num = Convert.ToString(rw["user_identity_card_num"]),
+                                     user_phone = Convert.ToString(rw["user_phone_number"]),
+                                 }).ToList();
+
+            return convertedList[0];
         }
     }
 }

@@ -79,19 +79,10 @@ namespace Duc_manage_vehicle.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if(globalUserId != null)
+            if (globalUserId != null)
             {
-                Account account = new Account();
-                DataTable da = userDAO.queryUser(globalUserId);
-                if(da != null)
-                {
-                    account.user_id = da.Rows[0].Field<string>(0);
-                    account.password = da.Rows[0].Field<string>(1);
-                    account.fullname = da.Rows[0].Field<string>(2);
-                    account.user_identity_card_num = da.Rows[0].Field<string>(3);
-                    account.user_phone = da.Rows[0].Field<string>(4);
-                }
-
+                AddUser editUser = new AddUser(globalUserId);
+                editUser.Show();
             }
         }
     }
